@@ -1,7 +1,10 @@
-h=int(input())
-f=list(map(int,input().split()))
-s=sorted(f)
-e=s[::-1]
-d=e[0]
-a=e[1]
-print(d+a)
+s=int(input())
+i=list(map(int,input().split()))
+l1=i[1:s:2]
+l2=i[0:s:2]
+#print(l1)
+#print(l2)
+if(sum(l1)>=sum(l2)):
+    print(sum(l1))
+else:
+    print(sum(l2))
